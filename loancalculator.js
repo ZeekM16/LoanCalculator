@@ -7,5 +7,5 @@ function computeLoan() {
     var payment = ((amount / months) + interest).toFixed(2);
     payment = payment.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     document.getElementById('payment').innerHTML = 'Monthly Payment = $'+payment;
-    
+
 }
